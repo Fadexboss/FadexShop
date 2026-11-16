@@ -1,0 +1,70 @@
+/* Shared interaction timings keep motion consistent across the store. */
+:root { --ease-out: cubic-bezier(.2,.75,.25,1); }
+.btn, .add-to-cart-btn, .category-btn, .size-btn, .size-filter-btn, .filter-btn, .filter-toggle-btn, .quantity-selector button, .item-quantity button, .remove-btn, .mobile-menu-btn, .hero-pause, .hero-dot, .marquee-toggle, .price-step {
+    transition: transform 220ms var(--ease-out), background-color 180ms ease, color 180ms ease, border-color 180ms ease, box-shadow 220ms ease;
+    -webkit-tap-highlight-color: transparent;
+}
+.btn svg, .add-to-cart-btn svg, .newsletter-btn svg, .footer-story-link svg, .team-card h3 svg, .stat-item > svg, .shipping-tab a svg { transition: transform 260ms var(--ease-out); }
+.btn:hover:not(:disabled), .btn:focus-visible { transform: translateY(-2px); box-shadow: 0 5px 13px #79502d12; }
+.btn:hover:not(:disabled) svg, .footer-story-link:hover svg, .team-card:hover h3 svg, .stat-item:hover > svg, .shipping-tab a:hover svg { transform: translateX(3px); }
+.btn:active:not(:disabled) { transform: translateY(0) scale(.98); box-shadow: none; transition-duration: 90ms; }
+.add-to-cart-btn:hover:not(:disabled), .add-to-cart-btn:focus-visible { transform: translateY(-2px); }
+.add-to-cart-btn:hover:not(:disabled) svg { transform: rotate(90deg); }
+.category-btn:hover, .size-btn:hover, .size-filter-btn:hover { transform: translateY(-2px); }
+.color-btn, .color-filter-btn { transition: transform 180ms var(--ease-out), box-shadow 180ms ease, outline-color 180ms ease; }
+.color-btn:hover, .color-filter-btn:hover { transform: scale(1.1); }
+.add-to-cart-btn:active:not(:disabled), .category-btn:active, .size-btn:active, .size-filter-btn:active, .color-btn:active, .color-filter-btn:active { transform: scale(.94); transition-duration: 80ms; }
+.quantity-selector button:active:not(:disabled), .item-quantity button:active:not(:disabled), .remove-btn:active, .mobile-menu-btn:active, .hero-pause:active, .hero-dot:active, .marquee-toggle:active, .price-step:active:not(:disabled) { transform: scale(.9); transition-duration: 80ms; }
+.filter-btn:hover { transform: translateX(3px); }
+.filter-btn:active { transform: translateX(1px); }
+.product-image { transition: box-shadow 320ms ease; }
+.product-card:hover .product-image, .product-card:focus-within .product-image { box-shadow: 0 9px 24px #54432e10; }
+.product-card:focus-within .product-img { transform: scale(1.035); }
+.product-info a { transition: color 180ms; }
+.product-card { animation: card-appear 480ms var(--ease-out) both; }
+.product-card:nth-child(4n + 2) { animation-delay: 40ms; }
+.product-card:nth-child(4n + 3) { animation-delay: 80ms; }
+.product-card:nth-child(4n + 4) { animation-delay: 120ms; }
+.logo .brand-symbol { transition: transform 260ms var(--ease-out), background-color 180ms; }
+.logo:hover .brand-symbol { transform: rotate(-4deg); background: var(--accent-strong); }
+.nav-links a::after { content: ''; position: absolute; bottom: 19px; left: 0; width: 100%; height: 1px; background: var(--accent-primary); transform: scaleX(0); transform-origin: left; transition: transform 250ms var(--ease-out); }
+.nav-links a.active::after, .nav-links a:hover::after, .nav-links a:focus-visible::after { transform: scaleX(1); }
+.cart-btn { transition: color 180ms; }
+.cart-btn > svg { transition: transform 260ms var(--ease-out); }
+.cart-btn:hover { color: var(--accent-primary); }
+.cart-btn:hover > svg { transform: translateY(-2px) rotate(-6deg); }
+.cart-badge { animation: badge-appear 320ms var(--ease-out) both; }
+.newsletter-form { transition: border-color 200ms, background-color 200ms; }
+.newsletter-form:focus-within { border-color: var(--accent-primary); background: #e7d4bc22; }
+.newsletter-btn:hover svg { transform: translateX(4px); }
+.newsletter-btn:active svg { transform: translateX(1px) scale(.9); }
+.faq-question { transition: color 180ms; }
+.faq-icon { transition: transform 260ms var(--ease-out), color 180ms; }
+.faq-item.open .faq-icon { transform: rotate(180deg); }
+.faq-answer:not([hidden]), .checkout-note, .shipping-tab { animation: answer-appear 300ms var(--ease-out) both; }
+.hero-badge, .hero-title, .hero-description, .hero-buttons, .hero-stats { animation: content-appear 750ms var(--ease-out) both; }
+.hero-badge { animation-delay: 40ms; }
+.hero-title { animation-delay: 100ms; }
+.hero-description { animation-delay: 170ms; }
+.hero-buttons { animation-delay: 240ms; }
+.hero-stats { animation-delay: 310ms; }
+.header-content .eyebrow, .header-title, .header-subtitle { animation: content-appear 700ms var(--ease-out) both; }
+.header-title { animation-delay: 70ms; }
+.header-subtitle { animation-delay: 140ms; }
+.toast { animation: toast-appear 300ms var(--ease-out) both; }
+.tab-btn { transition: color 180ms, border-color 180ms, background-color 180ms; }
+.tab-btn:hover { color: var(--accent-primary); }
+.team-card .team-avatar { transition: box-shadow 300ms; }
+.team-card:hover .team-avatar { box-shadow: 0 8px 22px #54432e12; }
+@keyframes content-appear { from { opacity: 0; transform: translateY(13px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes card-appear { from { opacity: 0; transform: translateY(9px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes badge-appear { from { opacity: 0; transform: scale(.7); } to { opacity: 1; transform: scale(1); } }
+@keyframes answer-appear { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: translateY(0); } }
+@keyframes toast-appear { from { opacity: 0; transform: translate(-50%,10px); } to { opacity: 1; transform: translate(-50%,0); } }
+@media (max-width:768px) { .nav-links a::after { display: none; } }
+@media (prefers-reduced-motion: reduce) {
+    html:not([data-motion='full']), html:not([data-motion='full']) *, html:not([data-motion='full']) *::before, html:not([data-motion='full']) *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+}
+
+html[data-motion='reduced'], html[data-motion='reduced'] *, html[data-motion='reduced'] *::before, html[data-motion='reduced'] *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+html[data-motion='reduced'] .whatsapp-pulse { display: none; }

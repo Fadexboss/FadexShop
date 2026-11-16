@@ -1,1202 +1,758 @@
 {
-    "products": [
+  "products": [
+    {
+      "id": 1,
+      "name": "Oversize Pamuk Tişört",
+      "description": "Yumuşak doku. Rahat, düşük omuzlu kesim.",
+      "longDescription": "Ağır gramajlı pamuk dokusu ve rahat kesimiyle günlük gardırobun temel parçası. Tek başına ya da gömlek ve ceketlerle katmanlı kullanım için.",
+      "price": 349,
+      "originalPrice": 499,
+      "category": "Giyim",
+      "subcategory": "Tişört",
+      "images": [
+        "/images/tee-black.webp",
+        "/images/tee-ecru.webp",
+        "/images/tee-navy.webp"
+      ],
+      "colors": [
         {
-            "id": 1,
-            "name": "Premium Oversize Tişört",
-            "description": "Yumuşak pamuklu, rahat kesim oversize tişört. Günlük kullanım için ideal.",
-            "longDescription": "Bu premium oversize tişört, %100 organik pamuktan üretilmiştir. Rahat kesimi ve yumuşak dokusuyla tüm gün boyunca konfor sağlar. Minimalist tasarımı sayesinde her kombine uyum sağlar.",
-            "price": 349,
-            "originalPrice": 499,
-            "category": "Giyim",
-            "subcategory": "Tişört",
-            "images": [
-                "/Products_images/prod_1_black_1.jpg",
-                "/Products_images/prod_1_white_1.jpg",
-                "/Products_images/prod_1_gray_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Beyaz",
-                    "code": "#FFFFFF",
-                    "images": [
-                        "/Products_images/prod_1_white_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_1_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_1_gray_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Lacivert",
-                    "code": "#1e3a5f",
-                    "images": [
-                        "/Products_images/prod_1_navy_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%100 Organik Pamuk"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Oversize Fit"
-                },
-                {
-                    "label": "Yaka",
-                    "value": "Bisiklet Yaka"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "30°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Ütü",
-                    "value": "Düşük Isıda Ütülenebilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.8,
-            "reviewCount": 342,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ahmet K.",
-                    "rating": 5,
-                    "date": "2025-12-15",
-                    "comment": "Kalitesi çok iyi, tam istediğim gibi oversize. Kesinlikle tavsiye ederim.",
-                    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Elif D.",
-                    "rating": 5,
-                    "date": "2025-12-10",
-                    "comment": "Kumaşı çok yumuşak, rengi soldurmuyor. 2 tane daha aldım.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                },
-                {
-                    "id": 3,
-                    "user": "Mert Y.",
-                    "rating": 4,
-                    "date": "2025-12-05",
-                    "comment": "Güzel ürün ama biraz uzun geldi bana. Yine de memnunum.",
-                    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 45
+          "name": "Siyah",
+          "code": "#242424",
+          "images": [
+            "/images/tee-black.webp"
+          ]
         },
         {
-            "id": 2,
-            "name": "Slim Fit Gömlek",
-            "description": "Şık ve modern slim fit kesim gömlek. Ofis ve özel günler için.",
-            "longDescription": "Premium kalite kumaştan üretilen bu slim fit gömlek, profesyonel görünümünüzü tamamlar. Nefes alan yapısı ve rahat kesimi ile uzun saatler boyunca konfor sağlar.",
-            "price": 599,
-            "originalPrice": 799,
-            "category": "Giyim",
-            "subcategory": "Gömlek",
-            "images": [
-                "/Products_images/prod_2_white_1.jpg",
-                "/Products_images/prod_2_blue_1.jpg",
-                "/Products_images/prod_2_pink_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Beyaz",
-                    "code": "#FFFFFF",
-                    "images": [
-                        "/Products_images/prod_2_white_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Mavi",
-                    "code": "#3b82f6",
-                    "images": [
-                        "/Products_images/prod_2_blue_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Pembe",
-                    "code": "#f472b6",
-                    "images": [
-                        "/Products_images/prod_2_pink_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%60 Pamuk, %40 Polyester"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Slim Fit"
-                },
-                {
-                    "label": "Yaka",
-                    "value": "İtalyan Yaka"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "40°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Ütü",
-                    "value": "Orta Isıda Ütülenebilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.7,
-            "reviewCount": 189,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Can Ö.",
-                    "rating": 5,
-                    "date": "2025-12-20",
-                    "comment": "Ofiste hep iltifat alıyorum. Kalıbı mükemmel.",
-                    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Zeynep A.",
-                    "rating": 4,
-                    "date": "2025-12-18",
-                    "comment": "Eşim için aldım, çok beğendi. Kumaşı kaliteli.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 28
+          "name": "Ekru",
+          "code": "#e9e1cf",
+          "images": [
+            "/images/tee-ecru.webp"
+          ]
         },
         {
-            "id": 3,
-            "name": "Jogger Eşofman Altı",
-            "description": "Rahat ve şık jogger kesim eşofman altı. Spor ve günlük kullanım.",
-            "longDescription": "Premium jogger eşofman altı, elastik bel ve paça yapısıyla maksimum hareket özgürlüğü sunar. Yumuşak iç yüzeyi ile tüm gün konfor sağlar.",
-            "price": 449,
-            "originalPrice": 599,
-            "category": "Giyim",
-            "subcategory": "Pantolon",
-            "images": [
-                "/Products_images/prod_3_black_1.jpg",
-                "/Products_images/prod_3_gray_1.jpg",
-                "/Products_images/prod_3_navy_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_3_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_3_gray_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Lacivert",
-                    "code": "#1e3a5f",
-                    "images": [
-                        "/Products_images/prod_3_navy_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%80 Pamuk, %20 Polyester"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Jogger Fit"
-                },
-                {
-                    "label": "Bel",
-                    "value": "Elastik Bel, İp Detaylı"
-                },
-                {
-                    "label": "Cep",
-                    "value": "2 Yan Cep, 1 Arka Cep"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "30°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.9,
-            "reviewCount": 567,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Berk T.",
-                    "rating": 5,
-                    "date": "2025-12-22",
-                    "comment": "Spor yaparken de günlük hayatta da giyiyorum. Süper rahat!",
-                    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Selin M.",
-                    "rating": 5,
-                    "date": "2025-12-19",
-                    "comment": "Kumaşı çok kaliteli, yıkamada hiç bozulmadı.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 72
-        },
-        {
-            "id": 4,
-            "name": "Kapüşonlu Sweatshirt",
-            "description": "Sıcak tutan, şık görünümlü kapüşonlu sweatshirt.",
-            "longDescription": "Soğuk günlerin vazgeçilmezi bu kapüşonlu sweatshirt, yumuşak polar iç astarıyla sizi sıcak tutar. Kanguru cebi ve ayarlanabilir kapüşonu ile hem pratik hem şık.",
-            "price": 699,
-            "originalPrice": 899,
-            "category": "Giyim",
-            "subcategory": "Sweatshirt",
-            "images": [
-                "/Products_images/prod_4_black_1.jpg",
-                "/Products_images/prod_4_gray_1.jpg",
-                "/Products_images/prod_4_maroon_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_4_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_4_gray_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Bordo",
-                    "code": "#7c2d12",
-                    "images": [
-                        "/Products_images/prod_4_maroon_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Haki",
-                    "code": "#65a30d",
-                    "images": [
-                        "/Products_images/prod_4_haki_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%70 Pamuk, %30 Polyester"
-                },
-                {
-                    "label": "İç Astar",
-                    "value": "Yumuşak Polar"
-                },
-                {
-                    "label": "Kapüşon",
-                    "value": "Ayarlanabilir İpli"
-                },
-                {
-                    "label": "Cep",
-                    "value": "Kanguru Cep"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "30°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.8,
-            "reviewCount": 423,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Deniz K.",
-                    "rating": 5,
-                    "date": "2025-12-21",
-                    "comment": "Çok sıcak tutuyor, kalitesi harika. Bordo rengi çok güzel.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Emre S.",
-                    "rating": 4,
-                    "date": "2025-12-17",
-                    "comment": "Güzel ürün, biraz ağır ama kaliteli olduğu belli.",
-                    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 35
-        },
-        {
-            "id": 5,
-            "name": "Deri Ceket",
-            "description": "Premium suni deri ceket. Şık ve dayanıklı.",
-            "longDescription": "Bu premium suni deri ceket, gerçek deri görünümünde yüksek kalite sunar. Fermuarlı detayları ve slim fit kesimi ile modern ve cesur bir görünüm sağlar.",
-            "price": 1899,
-            "originalPrice": 2499,
-            "category": "Giyim",
-            "subcategory": "Ceket",
-            "images": [
-                "/Products_images/prod_5_black_1.jpg",
-                "/Products_images/prod_5_brown_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_5_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Kahverengi",
-                    "code": "#78350f",
-                    "images": [
-                        "/Products_images/prod_5_brown_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
-            "features": [
-                {
-                    "label": "Dış Kumaş",
-                    "value": "Premium Suni Deri"
-                },
-                {
-                    "label": "Astar",
-                    "value": "Polyester Astar"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Slim Fit"
-                },
-                {
-                    "label": "Kapanış",
-                    "value": "Metal Fermuar"
-                },
-                {
-                    "label": "Cep",
-                    "value": "4 Fermuarlı Cep"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.6,
-            "reviewCount": 156,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Kaan B.",
-                    "rating": 5,
-                    "date": "2025-12-20",
-                    "comment": "Motor için aldım, tam istediğim gibi. Çok şık görünüyor.",
-                    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Ayşe N.",
-                    "rating": 4,
-                    "date": "2025-12-14",
-                    "comment": "Erkek arkadaşıma aldım, çok beğendi. Kalitesi iyi.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 18
-        },
-        {
-            "id": 6,
-            "name": "Basic V Yaka Tişört",
-            "description": "Her gün giyilebilecek basic V yaka tişört.",
-            "longDescription": "Gardırobunuzun olmazsa olmazı bu basic V yaka tişört, yumuşak pamuklu kumaşı ve rahat kesimi ile günlük kullanım için idealdir.",
-            "price": 199,
-            "originalPrice": 299,
-            "category": "Giyim",
-            "subcategory": "Tişört",
-            "images": [
-                "/Products_images/prod_6_white_1.jpg",
-                "/Products_images/prod_6_black_1.jpg",
-                "/Products_images/prod_6_gray_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Beyaz",
-                    "code": "#FFFFFF",
-                    "images": [
-                        "/Products_images/prod_6_white_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_6_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_6_gray_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "XS",
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%100 Pamuk"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Regular Fit"
-                },
-                {
-                    "label": "Yaka",
-                    "value": "V Yaka"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "40°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.5,
-            "reviewCount": 892,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Mehmet A.",
-                    "rating": 5,
-                    "date": "2025-12-23",
-                    "comment": "Her renkten 2 tane aldım. Fiyat/performans harika!",
-                    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Ceren Y.",
-                    "rating": 4,
-                    "date": "2025-12-21",
-                    "comment": "Basic ama kaliteli. Tam beklediğim gibi.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 124
-        },
-        {
-            "id": 7,
-            "name": "Kargo Pantolon",
-            "description": "Çok cepli, dayanıklı kargo pantolon.",
-            "longDescription": "Bu kargo pantolon, 6 adet fonksiyonel cebi ve dayanıklı kumaşıyla outdoor aktiviteleri ve günlük kullanım için ideal bir seçimdir.",
-            "price": 599,
-            "originalPrice": 799,
-            "category": "Giyim",
-            "subcategory": "Pantolon",
-            "images": [
-                "/Products_images/prod_7_haki_1.jpg",
-                "/Products_images/prod_7_black_1.jpg",
-                "/Products_images/prod_7_beige_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Haki",
-                    "code": "#65a30d",
-                    "images": [
-                        "/Products_images/prod_7_haki_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_7_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Bej",
-                    "code": "#d4a574",
-                    "images": [
-                        "/Products_images/prod_7_beige_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%100 Pamuk Twill"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Regular Fit"
-                },
-                {
-                    "label": "Cep",
-                    "value": "6 Fonksiyonel Cep"
-                },
-                {
-                    "label": "Bel",
-                    "value": "Kemer Köprülü"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "40°C Makinede Yıkanabilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.7,
-            "reviewCount": 278,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ali R.",
-                    "rating": 5,
-                    "date": "2025-12-19",
-                    "comment": "Kamp için aldım, cepleri çok kullanışlı. Dayanıklı görünüyor.",
-                    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Fatma G.",
-                    "rating": 5,
-                    "date": "2025-12-16",
-                    "comment": "Oğlum için aldım, çok sevdi. Kalitesi gerçekten iyi.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 42
-        },
-        {
-            "id": 8,
-            "name": "Triko Kazak",
-            "description": "Yumuşak yün karışımlı triko kazak.",
-            "longDescription": "Bu zarif triko kazak, yün karışımlı ipliği sayesinde hem sıcak tutar hem de şık görünüm sağlar. Bisiklet yaka tasarımı ile klasik ve modern bir tarz sunar.",
-            "price": 549,
-            "originalPrice": 749,
-            "category": "Giyim",
-            "subcategory": "Kazak",
-            "images": [
-                "/Products_images/prod_8_beige_1.jpg",
-                "/Products_images/prod_8_navy_1.jpg",
-                "/Products_images/prod_8_maroon_1.jpg",
-                "/Products_images/prod_8_gray_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Bej",
-                    "code": "#d4a574",
-                    "images": [
-                        "/Products_images/prod_8_beige_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Lacivert",
-                    "code": "#1e3a5f",
-                    "images": [
-                        "/Products_images/prod_8_navy_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Bordo",
-                    "code": "#7c2d12",
-                    "images": [
-                        "/Products_images/prod_8_maroon_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_8_gray_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%50 Yün, %50 Akrilik"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Regular Fit"
-                },
-                {
-                    "label": "Yaka",
-                    "value": "Bisiklet Yaka"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "El Yıkama veya Hassas Program"
-                },
-                {
-                    "label": "Ütü",
-                    "value": "Buharla Ütüleme Önerilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.8,
-            "reviewCount": 198,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Burak T.",
-                    "rating": 5,
-                    "date": "2025-12-22",
-                    "comment": "Çok yumuşak ve sıcak. Lacivert rengi çok şık.",
-                    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Hande K.",
-                    "rating": 4,
-                    "date": "2025-12-18",
-                    "comment": "Güzel ürün ama yıkamaya dikkat etmek gerekiyor.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 31
-        },
-        {
-            "id": 9,
-            "name": "Spor Ayakkabı Runner",
-            "description": "Hafif ve konforlu koşu ayakkabısı.",
-            "longDescription": "Bu profesyonel koşu ayakkabısı, hafif yapısı ve yastıklı tabanı ile uzun mesafelerde bile konfor sağlar. Nefes alan mesh üst kısmı ayağınızı serin tutar.",
-            "price": 899,
-            "originalPrice": 1199,
-            "category": "Ayakkabı",
-            "subcategory": "Spor Ayakkabı",
-            "images": [
-                "/Products_images/prod_9_black_1.jpg",
-                "/Products_images/prod_9_blue_1.jpg",
-                "/Products_images/prod_9_gray_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah/Beyaz",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_9_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Mavi/Beyaz",
-                    "code": "#3b82f6",
-                    "images": [
-                        "/Products_images/prod_9_blue_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Gri/Turuncu",
-                    "code": "#6b7280",
-                    "images": [
-                        "/Products_images/prod_9_gray_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "39",
-                "40",
-                "41",
-                "42",
-                "43",
-                "44",
-                "45"
-            ],
-            "features": [
-                {
-                    "label": "Üst Kısım",
-                    "value": "Nefes Alan Mesh"
-                },
-                {
-                    "label": "Taban",
-                    "value": "EVA Yastıklı Taban"
-                },
-                {
-                    "label": "Ağırlık",
-                    "value": "280g (42 numara)"
-                },
-                {
-                    "label": "Kullanım",
-                    "value": "Koşu, Yürüyüş, Günlük"
-                },
-                {
-                    "label": "Taban Tipi",
-                    "value": "Kaymaz Kauçuk"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Vietnam"
-                }
-            ],
-            "rating": 4.6,
-            "reviewCount": 345,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ozan M.",
-                    "rating": 5,
-                    "date": "2025-12-20",
-                    "comment": "10km koşuda test ettim, ayağım hiç ağrımadı. Süper!",
-                    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Gizem S.",
-                    "rating": 4,
-                    "date": "2025-12-17",
-                    "comment": "Hafif ve rahat. Biraz dar kalıyor, yarım numara büyük alın.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 56
-        },
-        {
-            "id": 10,
-            "name": "Deri Kemer",
-            "description": "Gerçek deri, klasik tasarım kemer.",
-            "longDescription": "Bu gerçek deri kemer, paslanmaz çelik tokası ve dayanıklı yapısıyla yıllarca kullanabileceğiniz bir aksesuar. Hem günlük hem de resmi kıyafetlerle uyumlu.",
-            "price": 299,
-            "originalPrice": 399,
-            "category": "Aksesuar",
-            "subcategory": "Kemer",
-            "images": [
-                "/Products_images/prod_10_black_1.jpg",
-                "/Products_images/prod_10_brown_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_10_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Kahverengi",
-                    "code": "#78350f",
-                    "images": [
-                        "/Products_images/prod_10_brown_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "85cm",
-                "90cm",
-                "95cm",
-                "100cm",
-                "105cm",
-                "110cm"
-            ],
-            "features": [
-                {
-                    "label": "Malzeme",
-                    "value": "Gerçek Dana Derisi"
-                },
-                {
-                    "label": "Toka",
-                    "value": "Paslanmaz Çelik"
-                },
-                {
-                    "label": "Genişlik",
-                    "value": "3.5cm"
-                },
-                {
-                    "label": "Kalınlık",
-                    "value": "4mm"
-                },
-                {
-                    "label": "Bakım",
-                    "value": "Deri Kremi ile Bakım Önerilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.9,
-            "reviewCount": 234,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Serkan Y.",
-                    "rating": 5,
-                    "date": "2025-12-23",
-                    "comment": "Gerçek deri olduğu belli. Çok kaliteli, tavsiye ederim.",
-                    "avatar": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Melis T.",
-                    "rating": 5,
-                    "date": "2025-12-20",
-                    "comment": "Babama hediye aldım, çok beğendi.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 67
-        },
-        {
-            "id": 11,
-            "name": "Beyzbol Şapka",
-            "description": "Pamuklu, ayarlanabilir beyzbol şapka.",
-            "longDescription": "Klasik beyzbol şapka tasarımı, %100 pamuk kumaşı ve ayarlanabilir arka kısmıyla her kafa boyutuna uyum sağlar. Günlük kullanım için ideal.",
-            "price": 149,
-            "originalPrice": 199,
-            "category": "Aksesuar",
-            "subcategory": "Şapka",
-            "images": [
-                "/Products_images/prod_11_black_1.jpg",
-                "/Products_images/prod_11_navy_1.jpg",
-                "/Products_images/prod_11_white_1.jpg",
-                "/Products_images/prod_11_red_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_11_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Lacivert",
-                    "code": "#1e3a5f",
-                    "images": [
-                        "/Products_images/prod_11_navy_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Beyaz",
-                    "code": "#FFFFFF",
-                    "images": [
-                        "/Products_images/prod_11_white_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Kırmızı",
-                    "code": "#dc2626",
-                    "images": [
-                        "/Products_images/prod_11_red_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "Tek Beden"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%100 Pamuk"
-                },
-                {
-                    "label": "Ayar",
-                    "value": "Metal Klipsli Ayarlanabilir"
-                },
-                {
-                    "label": "Siperlik",
-                    "value": "Sert Siperlik"
-                },
-                {
-                    "label": "Yıkama",
-                    "value": "El Yıkama Önerilir"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.4,
-            "reviewCount": 412,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Ege K.",
-                    "rating": 5,
-                    "date": "2025-12-21",
-                    "comment": "Basit ama kaliteli. Tam aradığım şey.",
-                    "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Tuğçe B.",
-                    "rating": 4,
-                    "date": "2025-12-19",
-                    "comment": "Güzel şapka, sadece ayar kısmı biraz sert.",
-                    "avatar": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 89
-        },
-        {
-            "id": 12,
-            "name": "Polar Mont",
-            "description": "Sıcak tutan, hafif polar mont.",
-            "longDescription": "Bu polar mont, soğuk havalarda iç katman veya tek başına kullanım için idealdir. Hafif yapısı ve yüksek ısı yalıtımı ile outdoor aktiviteler için mükemmel.",
-            "price": 599,
-            "originalPrice": 799,
-            "category": "Giyim",
-            "subcategory": "Mont",
-            "images": [
-                "/Products_images/prod_12_navy_1.jpg",
-                "/Products_images/prod_12_black_1.jpg",
-                "/Products_images/prod_12_haki_1.jpg"
-            ],
-            "colors": [
-                {
-                    "name": "Lacivert",
-                    "code": "#1e3a5f",
-                    "images": [
-                        "/Products_images/prod_12_navy_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Siyah",
-                    "code": "#1a1a1a",
-                    "images": [
-                        "/Products_images/prod_12_black_1.jpg"
-                    ]
-                },
-                {
-                    "name": "Haki",
-                    "code": "#65a30d",
-                    "images": [
-                        "/Products_images/prod_12_haki_1.jpg"
-                    ]
-                }
-            ],
-            "sizes": [
-                "S",
-                "M",
-                "L",
-                "XL",
-                "XXL"
-            ],
-            "features": [
-                {
-                    "label": "Kumaş",
-                    "value": "%100 Polyester Polar"
-                },
-                {
-                    "label": "Kalınlık",
-                    "value": "280gsm"
-                },
-                {
-                    "label": "Kalıp",
-                    "value": "Regular Fit"
-                },
-                {
-                    "label": "Kapanış",
-                    "value": "Tam Boy Fermuar"
-                },
-                {
-                    "label": "Cep",
-                    "value": "2 Fermuarlı Yan Cep"
-                },
-                {
-                    "label": "Menşei",
-                    "value": "Türkiye"
-                }
-            ],
-            "rating": 4.7,
-            "reviewCount": 267,
-            "reviews": [
-                {
-                    "id": 1,
-                    "user": "Volkan A.",
-                    "rating": 5,
-                    "date": "2025-12-22",
-                    "comment": "Dağ yürüyüşleri için aldım, çok hafif ve sıcak tutuyor.",
-                    "avatar": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=100"
-                },
-                {
-                    "id": 2,
-                    "user": "Pınar E.",
-                    "rating": 5,
-                    "date": "2025-12-19",
-                    "comment": "Ofiste de dışarıda da giyiyorum. Çok kullanışlı.",
-                    "avatar": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=100"
-                }
-            ],
-            "inStock": true,
-            "stockCount": 38
+          "name": "Lacivert",
+          "code": "#202b40",
+          "images": [
+            "/images/tee-navy.webp"
+          ]
         }
-    ],
-    "categories": [
-        "Tümü",
-        "Giyim",
-        "Ayakkabı",
-        "Aksesuar"
-    ],
-    "subcategories": {
-        "Giyim": [
-            "Tişört",
-            "Gömlek",
-            "Pantolon",
-            "Sweatshirt",
-            "Ceket",
-            "Kazak",
-            "Mont"
-        ],
-        "Ayakkabı": [
-            "Spor Ayakkabı",
-            "Günlük Ayakkabı",
-            "Bot"
-        ],
-        "Aksesuar": [
-            "Kemer",
-            "Şapka",
-            "Çanta",
-            "Cüzdan"
-        ]
-    },
-    "availableSizes": [
+      ],
+      "sizes": [
         "XS",
         "S",
         "M",
         "L",
         "XL",
         "XXL"
-    ],
-    "availableColors": [
+      ],
+      "features": [
         {
-            "name": "Siyah",
-            "code": "#1a1a1a"
+          "label": "Kumaş",
+          "value": "%100 Organik Pamuk"
         },
         {
-            "name": "Beyaz",
-            "code": "#FFFFFF"
+          "label": "Kalıp",
+          "value": "Oversize Fit"
         },
         {
-            "name": "Gri",
-            "code": "#6b7280"
+          "label": "Yaka",
+          "value": "Bisiklet Yaka"
         },
         {
-            "name": "Lacivert",
-            "code": "#1e3a5f"
+          "label": "Yıkama",
+          "value": "30°C Makinede Yıkanabilir"
         },
         {
-            "name": "Mavi",
-            "code": "#3b82f6"
+          "label": "Ütü",
+          "value": "Düşük Isıda Ütülenebilir"
         },
         {
-            "name": "Kırmızı",
-            "code": "#dc2626"
-        },
-        {
-            "name": "Bordo",
-            "code": "#7c2d12"
-        },
-        {
-            "name": "Haki",
-            "code": "#65a30d"
+          "label": "Menşei",
+          "value": "Türkiye"
         }
+      ],
+      "inStock": true,
+      "stockCount": 45
+    },
+    {
+      "id": 2,
+      "name": "Oxford Pamuk Gömlek",
+      "description": "Temiz çizgiler, doğal pamuk dokusu.",
+      "longDescription": "Düğmeli yakası ve yalın siluetiyle gündelik görünümden daha özenli kombinlere geçiş yapan bir Oxford gömlek. Manşetleri katlayarak daha rahat bir görünüm elde edebilirsin.",
+      "price": 599,
+      "originalPrice": 799,
+      "category": "Giyim",
+      "subcategory": "Gömlek",
+      "images": [
+        "/images/shirt-white.webp"
+      ],
+      "colors": [
+        {
+          "name": "Beyaz",
+          "code": "#f3f1e9",
+          "images": [
+            "/images/shirt-white.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "Pamuk Oxford"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular fit"
+        },
+        {
+          "label": "Yaka",
+          "value": "Düğmeli yaka"
+        },
+        {
+          "label": "Kol",
+          "value": "Uzun kol"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 28
+    },
+    {
+      "id": 3,
+      "name": "Rahat Kesim Jogger",
+      "description": "Günün temposuna uyum sağlayan rahatlık.",
+      "longDescription": "Esnek bel detayı ve bilekte toparlanan paçalarıyla rahat bir günlük parça. Tişörtlerle sade, sweatshirtlerle bütünlüklü bir görünüm sunar.",
+      "price": 449,
+      "originalPrice": 599,
+      "category": "Giyim",
+      "subcategory": "Pantolon",
+      "images": [
+        "/images/jogger-charcoal.webp"
+      ],
+      "colors": [
+        {
+          "name": "Antrasit",
+          "code": "#333334",
+          "images": [
+            "/images/jogger-charcoal.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%80 Pamuk, %20 Polyester"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Jogger Fit"
+        },
+        {
+          "label": "Bel",
+          "value": "Elastik Bel, İp Detaylı"
+        },
+        {
+          "label": "Cep",
+          "value": "2 Yan Cep, 1 Arka Cep"
+        },
+        {
+          "label": "Yıkama",
+          "value": "30°C Makinede Yıkanabilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 72
+    },
+    {
+      "id": 4,
+      "name": "Kapüşonlu Sweatshirt",
+      "description": "Yumuşak iç yüzey, dengeli bir siluet.",
+      "longDescription": "Rahat kesimi, kanguru cebi ve ayarlanabilir kapüşonuyla serin günlerin tamamlayıcısı. Günlük kombinlerde jogger veya düz kesim pantolonlarla kolayca eşleşir.",
+      "price": 699,
+      "originalPrice": 899,
+      "category": "Giyim",
+      "subcategory": "Sweatshirt",
+      "images": [
+        "/images/hoodie-gray.webp",
+        "/images/hoodie-charcoal.webp"
+      ],
+      "colors": [
+        {
+          "name": "Gri Melanj",
+          "code": "#a3a2a0",
+          "images": [
+            "/images/hoodie-gray.webp"
+          ]
+        },
+        {
+          "name": "Antrasit",
+          "code": "#333334",
+          "images": [
+            "/images/hoodie-charcoal.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%70 Pamuk, %30 Polyester"
+        },
+        {
+          "label": "İç Astar",
+          "value": "Yumuşak Polar"
+        },
+        {
+          "label": "Kapüşon",
+          "value": "Ayarlanabilir İpli"
+        },
+        {
+          "label": "Cep",
+          "value": "Kanguru Cep"
+        },
+        {
+          "label": "Yıkama",
+          "value": "30°C Makinede Yıkanabilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 35
+    },
+    {
+      "id": 5,
+      "name": "Suni Deri Ceket",
+      "description": "Yalın detaylar. Güçlü bir duruş.",
+      "longDescription": "Mat suni deri dokusu, gömlek yakası ve sade fermuar detayıyla şehir stiline eşlik eden bir ceket. Tişört ya da ince triko üzerine katmanlayabilirsin.",
+      "price": 1899,
+      "originalPrice": 2499,
+      "category": "Giyim",
+      "subcategory": "Ceket",
+      "images": [
+        "/images/jacket-black.webp"
+      ],
+      "colors": [
+        {
+          "name": "Siyah",
+          "code": "#242424",
+          "images": [
+            "/images/jacket-black.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "features": [
+        {
+          "label": "Malzeme",
+          "value": "Suni deri"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular fit"
+        },
+        {
+          "label": "Yaka",
+          "value": "Gömlek yaka"
+        },
+        {
+          "label": "Kapanış",
+          "value": "Fermuarlı"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 18
+    },
+    {
+      "id": 6,
+      "name": "V Yaka Pamuk Tişört",
+      "description": "Hafif doku, sade bir başlangıç.",
+      "longDescription": "V yaka kesimi ve hafif pamuk dokusuyla günlük kullanım için tasarlanan bir temel parça. Tek başına veya gömleklerin altında rahatlıkla kullanılabilir.",
+      "price": 199,
+      "originalPrice": 299,
+      "category": "Giyim",
+      "subcategory": "Tişört",
+      "images": [
+        "/images/tee-white.webp"
+      ],
+      "colors": [
+        {
+          "name": "Kırık Beyaz",
+          "code": "#f2ede0",
+          "images": [
+            "/images/tee-white.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "XS",
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%100 Pamuk"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular Fit"
+        },
+        {
+          "label": "Yaka",
+          "value": "V Yaka"
+        },
+        {
+          "label": "Yıkama",
+          "value": "40°C Makinede Yıkanabilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 124
+    },
+    {
+      "id": 7,
+      "name": "Düz Kesim Kargo Pantolon",
+      "description": "İşlevsel cepler, rahat bir siluet.",
+      "longDescription": "Yan kapaklı cepleri ve düz paça kesimiyle işlevselliği sade bir görünümle birleştirir. Nötr haki tonu, açık ve koyu renk üstlerle kolayca uyum sağlar.",
+      "price": 599,
+      "originalPrice": 799,
+      "category": "Giyim",
+      "subcategory": "Pantolon",
+      "images": [
+        "/images/cargo-olive.webp"
+      ],
+      "colors": [
+        {
+          "name": "Haki",
+          "code": "#686b47",
+          "images": [
+            "/images/cargo-olive.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%100 Pamuk Twill"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular Fit"
+        },
+        {
+          "label": "Cep",
+          "value": "6 Fonksiyonel Cep"
+        },
+        {
+          "label": "Bel",
+          "value": "Kemer Köprülü"
+        },
+        {
+          "label": "Yıkama",
+          "value": "40°C Makinede Yıkanabilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 42
+    },
+    {
+      "id": 8,
+      "name": "Dokulu Triko Kazak",
+      "description": "Serin günlere sıcak bir dokunuş.",
+      "longDescription": "Belirgin örgü dokusu, bisiklet yakası ve yumuşak ekru tonuyla serin günlerin vazgeçilmezi. Gömlek üzerine ya da tek başına, rahat kombinlerin tamamlayıcısı.",
+      "price": 549,
+      "originalPrice": 749,
+      "category": "Giyim",
+      "subcategory": "Kazak",
+      "images": [
+        "/images/knit-ecru.webp"
+      ],
+      "colors": [
+        {
+          "name": "Ekru",
+          "code": "#e9e1cf",
+          "images": [
+            "/images/knit-ecru.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL"
+      ],
+      "features": [
+        {
+          "label": "Doku",
+          "value": "Fitilli örgü"
+        },
+        {
+          "label": "Kumaş",
+          "value": "Yün karışımlı triko"
+        },
+        {
+          "label": "Yaka",
+          "value": "Bisiklet yaka"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular fit"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 31
+    },
+    {
+      "id": 9,
+      "name": "Mesh Günlük Sneaker",
+      "description": "Hafif adımlar, temiz bir görünüm.",
+      "longDescription": "Beyaz ve açık gri tonları, mesh dokusu ve yumuşak hatlarıyla günlük kombinlere eşlik eden spor ayakkabı. Jogger ve düz kesim pantolonlarla sade bir bütünlük sağlar.",
+      "price": 899,
+      "originalPrice": 1199,
+      "category": "Ayakkabı",
+      "subcategory": "Spor Ayakkabı",
+      "images": [
+        "/images/runner-white.webp"
+      ],
+      "colors": [
+        {
+          "name": "Beyaz / Gri",
+          "code": "#deddd8",
+          "images": [
+            "/images/runner-white.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "39",
+        "40",
+        "41",
+        "42",
+        "43",
+        "44",
+        "45"
+      ],
+      "features": [
+        {
+          "label": "Üst yüzey",
+          "value": "Mesh ve sentetik paneller"
+        },
+        {
+          "label": "Renk",
+          "value": "Beyaz / Gri"
+        },
+        {
+          "label": "Kullanım",
+          "value": "Günlük"
+        },
+        {
+          "label": "Kapanış",
+          "value": "Bağcıklı"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 56
+    },
+    {
+      "id": 10,
+      "name": "Klasik Deri Kemer",
+      "description": "Kombinini tamamlayan ince detay.",
+      "longDescription": "Kahverengi deri dokusu ve fırçalanmış metal tokasıyla gardırobun farklı parçalarıyla uyum sağlayan klasik bir aksesuar. Günlük ya da daha özenli kombinlere eşlik eder.",
+      "price": 299,
+      "originalPrice": 399,
+      "category": "Aksesuar",
+      "subcategory": "Kemer",
+      "images": [
+        "/images/belt-brown.webp"
+      ],
+      "colors": [
+        {
+          "name": "Kahverengi",
+          "code": "#633c29",
+          "images": [
+            "/images/belt-brown.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "85cm",
+        "90cm",
+        "95cm",
+        "100cm",
+        "105cm",
+        "110cm"
+      ],
+      "features": [
+        {
+          "label": "Malzeme",
+          "value": "Gerçek Dana Derisi"
+        },
+        {
+          "label": "Toka",
+          "value": "Paslanmaz Çelik"
+        },
+        {
+          "label": "Genişlik",
+          "value": "3.5cm"
+        },
+        {
+          "label": "Kalınlık",
+          "value": "4mm"
+        },
+        {
+          "label": "Bakım",
+          "value": "Deri Kremi ile Bakım Önerilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 67
+    },
+    {
+      "id": 11,
+      "name": "Pamuk Beyzbol Şapka",
+      "description": "Günlük stile son bir dokunuş.",
+      "longDescription": "Lacivert pamuk dokusu, kavisli siperi ve sade görünümüyle günlük kullanım için bir tamamlayıcı. Ayarlanabilir arka bant farklı baş ölçülerine uyum sağlar.",
+      "price": 149,
+      "originalPrice": 199,
+      "category": "Aksesuar",
+      "subcategory": "Şapka",
+      "images": [
+        "/images/cap-navy.webp"
+      ],
+      "colors": [
+        {
+          "name": "Lacivert",
+          "code": "#202b40",
+          "images": [
+            "/images/cap-navy.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "Tek Beden"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%100 Pamuk"
+        },
+        {
+          "label": "Ayar",
+          "value": "Metal Klipsli Ayarlanabilir"
+        },
+        {
+          "label": "Siperlik",
+          "value": "Sert Siperlik"
+        },
+        {
+          "label": "Yıkama",
+          "value": "El Yıkama Önerilir"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 89
+    },
+    {
+      "id": 12,
+      "name": "Dik Yaka Polar",
+      "description": "Hafif bir katman, yumuşak bir his.",
+      "longDescription": "Dik yakası, fermuarlı ön kapaması ve yumuşak polar yüzeyiyle serin günlerde katmanlı giyime eşlik eder. Günlük yürüyüşlerden hafta sonu planlarına kadar kolay kullanım.",
+      "price": 599,
+      "originalPrice": 799,
+      "category": "Giyim",
+      "subcategory": "Mont",
+      "images": [
+        "/images/fleece-navy.webp"
+      ],
+      "colors": [
+        {
+          "name": "Lacivert",
+          "code": "#202b40",
+          "images": [
+            "/images/fleece-navy.webp"
+          ]
+        }
+      ],
+      "sizes": [
+        "S",
+        "M",
+        "L",
+        "XL",
+        "XXL"
+      ],
+      "features": [
+        {
+          "label": "Kumaş",
+          "value": "%100 Polyester Polar"
+        },
+        {
+          "label": "Kalınlık",
+          "value": "280gsm"
+        },
+        {
+          "label": "Kalıp",
+          "value": "Regular Fit"
+        },
+        {
+          "label": "Kapanış",
+          "value": "Tam Boy Fermuar"
+        },
+        {
+          "label": "Cep",
+          "value": "2 Fermuarlı Yan Cep"
+        },
+        {
+          "label": "Menşei",
+          "value": "Türkiye"
+        }
+      ],
+      "inStock": true,
+      "stockCount": 38
+    }
+  ],
+  "categories": [
+    "Tümü",
+    "Giyim",
+    "Ayakkabı",
+    "Aksesuar"
+  ],
+  "subcategories": {
+    "Giyim": [
+      "Tişört",
+      "Gömlek",
+      "Pantolon",
+      "Sweatshirt",
+      "Ceket",
+      "Kazak",
+      "Mont"
+    ],
+    "Ayakkabı": [
+      "Spor Ayakkabı"
+    ],
+    "Aksesuar": [
+      "Kemer",
+      "Şapka"
     ]
+  },
+  "availableSizes": [
+    "XS",
+    "S",
+    "M",
+    "L",
+    "XL",
+    "XXL",
+    "39",
+    "40",
+    "41",
+    "42",
+    "43",
+    "44",
+    "45",
+    "85cm",
+    "90cm",
+    "95cm",
+    "100cm",
+    "105cm",
+    "110cm",
+    "Tek Beden"
+  ],
+  "availableColors": [
+    {
+      "name": "Siyah",
+      "code": "#242424"
+    },
+    {
+      "name": "Ekru",
+      "code": "#e9e1cf"
+    },
+    {
+      "name": "Lacivert",
+      "code": "#202b40"
+    },
+    {
+      "name": "Beyaz",
+      "code": "#f3f1e9"
+    },
+    {
+      "name": "Antrasit",
+      "code": "#333334"
+    },
+    {
+      "name": "Gri Melanj",
+      "code": "#a3a2a0"
+    },
+    {
+      "name": "Kırık Beyaz",
+      "code": "#f2ede0"
+    },
+    {
+      "name": "Haki",
+      "code": "#686b47"
+    },
+    {
+      "name": "Beyaz / Gri",
+      "code": "#deddd8"
+    },
+    {
+      "name": "Kahverengi",
+      "code": "#633c29"
+    }
+  ]
 }

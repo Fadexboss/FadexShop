@@ -1,20 +1,7 @@
-import React from 'react';
 import './PageHeader.css';
-
-const PageHeader = ({ title, subtitle, backgroundImage }) => {
-    return (
-        <div
-            className="page-header-premium"
-            style={{ backgroundImage: `url(${backgroundImage})` }}
-        >
-            <div className="header-overlay"></div>
-            <div className="container header-content">
-                <h1 className="header-title">{title}</h1>
-                {subtitle && <p className="header-subtitle">{subtitle}</p>}
-                <div className="header-accent"></div>
-            </div>
-        </div>
-    );
-};
-
-export default PageHeader;
+export default function PageHeader({ title, subtitle, backgroundImage }) {
+    return <header className="page-header-premium" style={{backgroundImage: `url(${backgroundImage || '/images/editorial-studio.webp'})`}}>
+        <div className="header-overlay"/>
+        <div className="container header-content"><span className="eyebrow">FADEXSHOP / THE EVERYDAY EDIT</span><h1 className="header-title">{title}</h1>{subtitle && <p className="header-subtitle">{subtitle}</p>}</div>
+    </header>;
+}

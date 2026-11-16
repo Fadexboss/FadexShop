@@ -1,0 +1,90 @@
+{
+  "tool": "Built-in image_gen.imagegen",
+  "purpose": "FadexShop demonstration store. All depicted products and scenes are illustrative.",
+  "optimization": "Converted to WebP quality 85; product images at most 960 × 1200; editorial images at most 1920 × 1200. No generative content edits outside image_gen.",
+  "assets": [
+    {
+      "file": "editorial-hero.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: full-bleed hero photograph for FadexShop, a refined Turkish everyday clothing web store. Create an original editorial fashion photograph, wide landscape 16:9 composition. A young adult male model in a beautiful unbranded textured ecru crewneck knit sweater and charcoal tailored trousers, standing naturally on the RIGHT THIRD of frame next to a warm beige limestone wall, one hand in pocket, eyes looking out of frame. Half to three-quarter length, head entirely within image, restrained confident expression. The LEFT HALF is a clean quiet pale warm stone wall with ample empty space for website headline overlay. Natural late afternoon sidelight from upper left, rich but soft shadows, subtle fine analog grain, credible skin and knitted fabric texture, high-end fashion catalog art direction, warm off-white, taupe, charcoal, muted terracotta palette. A faint shadow of architecture across wall. Minimal, quiet, premium editorial photography, not a 3D render. No text, no writing, no logos, no watermarks, no frames, no collage, no UI. Save the generated asset for project integration."
+    },
+    {
+      "file": "editorial-studio.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide landscape banner photograph for a minimalist clothing store website, 16:9. An empty serene independent clothing design studio, natural oak clothing rail with a carefully curated few plain ecru shirts, camel knitwear, charcoal jacket and navy garments on wooden hangers to the right, linen worktable in lower foreground with folded cream fabric, warm plaster walls, a soft architectural shadow from tall windows, warm natural daylight, subtle film grain, earthy warm muted neutral palette. Real tactile fabrics, quiet editorial magazine photograph, restrained composition, generous negative space at left, no people, no text, no logos, no watermark, no UI."
+    },
+    {
+      "file": "tee-black.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous and consistent 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile fabric, clean high-end catalog art direction, no model, no hands, no hanger, no other props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded black heavyweight oversized cotton crew-neck short sleeve T-shirt, front view, gently dimensional laid flat with natural subtle folds."
+    },
+    {
+      "file": "shirt-white.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous and consistent 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile fabric, clean high-end catalog art direction, no model, no hands, no hanger, no other props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded white cotton Oxford long-sleeve button-down shirt, front view, neat collar, sleeves relaxed, slightly dimensional flat lay."
+    },
+    {
+      "file": "jogger-charcoal.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous and consistent 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile fabric, clean high-end catalog art direction, no model, no hands, no hanger, no other props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded pair of charcoal black cotton jogger trousers with elastic cuffs and subtle drawstring waist, front view, full length, neatly laid flat."
+    },
+    {
+      "file": "hoodie-gray.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous and consistent 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile fabric, clean high-end catalog art direction, no model, no hands, no hanger, no other props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded heather gray cotton pullover hooded sweatshirt, front view, kangaroo pocket, substantial soft fabric, naturally dimensional flat lay."
+    },
+    {
+      "file": "jacket-black.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded black minimalist matte vegan leather zip-front jacket with a clean point collar, long sleeves and two subtle side pockets, front view, dimensional laid flat."
+    },
+    {
+      "file": "tee-white.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded warm white cotton V-neck short sleeve T-shirt, front view, dimensional laid flat."
+    },
+    {
+      "file": "cargo-olive.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded pair of muted olive green cargo trousers with side flap pockets, straight relaxed legs, full length, front view, dimensional laid flat."
+    },
+    {
+      "file": "knit-ecru.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded ecru rib-knit crewneck wool blend sweater with long sleeves, front view, dimensional laid flat."
+    },
+    {
+      "file": "runner-white.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded pair of minimalist white and light gray mesh running sneakers, one in profile in foreground and the other behind, natural dimensional product photography, light gray outsole."
+    },
+    {
+      "file": "belt-brown.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded warm dark brown smooth leather belt with brushed silver rectangular buckle, neatly loosely coiled, luxury product photograph."
+    },
+    {
+      "file": "cap-navy.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded dark navy blue cotton baseball cap, three-quarter front angle showing curved peak and fine cotton texture."
+    },
+    {
+      "file": "fleece-navy.webp",
+      "prompt": "Use case: product-mockup. Asset type: individual product photo for a refined minimalist Turkish clothing ecommerce catalog. Photorealistic professional studio product photography. ONE product only, entire item centered and fully visible with generous 12 percent breathing room around it, on seamless light warm gray/off-white background #efede9, soft diffused daylight, gentle shadow below, true tactile material, clean high-end catalog art direction, no model, no hands, no hanger, no props, no writing, no logos, no branding, no watermark, no border. Vertical 4:5 composition. Subject: an unbranded deep navy blue fleece zip-front jacket with a standing collar and two side pockets, front view, dimensional laid flat."
+    },
+    {
+      "file": "tee-ecru.webp",
+      "reference": "tee-black.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: the provided product photograph. Change ONLY the garment fabric color to warm ecru / off-white. Preserve exactly the same garment cut, stitches, fabric texture, pose, framing, lighting, shadows, and warm light gray background. No new details, text, logos, props, or watermarks. This is a color variant of the identical catalog product."
+    },
+    {
+      "file": "tee-navy.webp",
+      "reference": "tee-black.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: the provided product photograph. Change ONLY the garment fabric color to deep dark navy blue. Preserve exactly the same garment cut, stitches, fabric texture, pose, framing, lighting, shadows, and warm light gray background. No new details, text, logos, props, or watermarks. This is a color variant of the identical catalog product."
+    },
+    {
+      "file": "hoodie-charcoal.webp",
+      "reference": "hoodie-gray.webp",
+      "prompt": "Use case: precise-object-edit. Edit target: the provided product photograph. Change ONLY the garment fabric color to deep charcoal gray. Preserve exactly the same garment cut, stitches, fabric texture, pose, framing, lighting, shadows, and warm light gray background. No new details, text, logos, props, or watermarks. This is a color variant of the identical catalog product."
+    },
+    {
+      "file": "editorial-city.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide 16:9 editorial fashion hero photograph for FadexShop, a minimalist everyday clothing store. A cohesive campaign with warm limestone, cream, caramel and honey-brown tones, soft natural late afternoon daylight, high-end analog fashion photography with tactile fabrics and fine subtle film grain. Composition is essential: the LEFT HALF must be a quiet pale warm beige architectural wall with plenty of empty space for website copy; all garments and model are in the RIGHT THIRD. Adult male model wearing plain unbranded everyday clothing, natural confident pose, head entirely inside frame with breathing room above. Half to three-quarter length portrait. Photorealism, natural skin, accurate hands, restrained editorial art direction. No text, no logos, no writing, no watermark, no collage, no UI. Scene: warm limestone doorway and subtle sunlit stairway, young adult man in a camel cotton overshirt over an ecru T-shirt with charcoal relaxed trousers, one hand in pocket and looking quietly away. Very clean architectural shadows, thoughtful minimal city style. Keep the backdrop warm and gently desaturated, with pale left side."
+    },
+    {
+      "file": "editorial-layers.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide 16:9 editorial fashion hero photograph for FadexShop, a minimalist everyday clothing store. A cohesive campaign with warm limestone, cream, caramel and honey-brown tones, soft natural late afternoon daylight, high-end analog fashion photography with tactile fabrics and fine subtle film grain. Composition is essential: the LEFT HALF must be a quiet pale warm beige architectural wall with plenty of empty space for website copy; all garments and model are in the RIGHT THIRD. Adult male model wearing plain unbranded everyday clothing, natural confident pose, head entirely inside frame with breathing room above. Half to three-quarter length portrait. Photorealism, natural skin, accurate hands, restrained editorial art direction. No text, no logos, no writing, no watermark, no collage, no UI. Scene: bright cream plaster courtyard with a slim oak door at the far right, young adult man wearing a dark navy lightweight zip jacket over a white T-shirt and sand-colored trousers, relaxed side-facing pose. Warm indirect sunshine, quiet geometry, elevated casual layering. Keep model toward right and left wall open and pale."
+    },
+    {
+      "file": "editorial-weekend.webp",
+      "prompt": "Use case: photorealistic-natural. Asset type: wide 16:9 editorial fashion hero photograph for FadexShop, a minimalist everyday clothing store. A cohesive campaign with warm limestone, cream, caramel and honey-brown tones, soft natural late afternoon daylight, high-end analog fashion photography with tactile fabrics and fine subtle film grain. Composition is essential: the LEFT HALF must be a quiet pale warm beige architectural wall with plenty of empty space for website copy; all garments and model are in the RIGHT THIRD. Adult male model wearing plain unbranded everyday clothing, natural confident pose, head entirely inside frame with breathing room above. Half to three-quarter length portrait. Photorealism, natural skin, accurate hands, restrained editorial art direction. No text, no logos, no writing, no watermark, no collage, no UI. Scene: sunlit minimalist sandstone studio with a low oak bench only at the far right, young adult man in a warm caramel ribbed crewneck knit sweater and off-white relaxed trousers, standing casually with one hand resting on bench, gaze turned toward light. Relaxed weekend mood, soft honey-gold shadows and pale cream wall. Keep model toward right and left wall open."
+    }
+  ]
+}

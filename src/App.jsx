@@ -1,5 +1,5 @@
-import { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import { ProductProvider, useProducts } from './context/ProductContext';
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
@@ -11,132 +11,54 @@ import FAQ from './pages/FAQ';
 import Cart from './pages/Cart';
 import ScrollToTop from './components/ScrollToTop';
 import WhatsAppButton from './components/WhatsAppButton';
+import Icon from './components/Icon';
+import useMotionPreference from './useMotionPreference';
 import './App.css';
+import './motion.css';
 
+const CART_KEY = 'fadexshop-cart-v2';
+function readCart() {
+  try {
+    const saved = JSON.parse(localStorage.getItem(CART_KEY) || '[]');
+    return Array.isArray(saved) ? saved.filter(item => Number.isInteger(item.id) && Number.isInteger(item.quantity) && item.quantity > 0 && item.quantity <= 99 && Number.isFinite(item.price) && Array.isArray(item.images) && Array.isArray(item.colors) && Array.isArray(item.sizes)) : [];
+  } catch { return []; }
+}
 function AppContent() {
-  const [cart, setCart] = useState([]);
+  const { motionEnabled, toggleMotion } = useMotionPreference();
+  const [cart, setCart] = useState(readCart);
+  const [toast, setToast] = useState(null);
   const { products, loading, error } = useProducts();
-
+  useEffect(() => { try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch { /* Browsing with storage disabled still supports the current session. */ } }, [cart]);
+  useEffect(() => { if (!toast) return; const timer = setTimeout(() => setToast(null), 3800); return () => clearTimeout(timer); }, [toast]);
   const handleAddToCart = (product) => {
-    setCart(prevCart => {
-      const existingItem = prevCart.find(item =>
-        item.id === product.id &&
-        item.selectedSize === product.selectedSize &&
-        item.selectedColor?.name === product.selectedColor?.name
-      );
-
-      if (existingItem) {
-        return prevCart.map(item =>
-          (item.id === product.id &&
-            item.selectedSize === product.selectedSize &&
-            item.selectedColor?.name === product.selectedColor?.name)
-            ? { ...item, quantity: item.quantity + (product.quantity || 1) }
-            : item
-        );
-      }
-      return [...prevCart, {
-        ...product,
-        quantity: product.quantity || 1,
-        selectedSize: product.selectedSize || product.sizes?.[0],
-        selectedColor: product.selectedColor || product.colors?.[0]
-      }];
+    if (!product.inStock) return;
+    const maxQuantity = Math.min(product.stockCount || 99, 99);
+    const item = { ...product, quantity: Math.min(maxQuantity, product.quantity || 1), selectedSize: product.selectedSize || product.sizes[0], selectedColor: product.selectedColor || product.colors[0] };
+    setCart(previous => {
+      const matches = entry => entry.id === item.id && entry.selectedSize === item.selectedSize && entry.selectedColor?.name === item.selectedColor?.name;
+      return previous.some(matches) ? previous.map(entry => matches(entry) ? { ...entry, quantity: Math.min(maxQuantity, entry.quantity + item.quantity) } : entry) : [...previous, item];
     });
+    setToast({ name: product.name, time: Date.now() });
   };
-
-  const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
-
-  if (loading) {
-    return (
-      <div className="app">
-        <Navbar cartCount={0} />
-        <main style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '60vh',
-          flexDirection: 'column',
-          gap: '1rem'
-        }}>
-          <div className="loading-spinner" style={{
-            width: '50px',
-            height: '50px',
-            border: '4px solid rgba(255, 255, 255, 0.1)',
-            borderTopColor: 'var(--primary)',
-            borderRadius: '50%',
-            animation: 'spin 1s linear infinite'
-          }}></div>
-          <p style={{ color: 'var(--text-secondary)' }}>Ürünler yükleniyor...</p>
-        </main>
-        <Footer />
-        <style>{`
-          @keyframes spin {
-            to { transform: rotate(360deg); }
-          }
-        `}</style>
-      </div>
-    );
-  }
-
-  if (error) {
-    return (
-      <div className="app">
-        <Navbar cartCount={0} />
-        <main style={{
-          display: 'flex',
-          justifyContent: 'center',
-          alignItems: 'center',
-          minHeight: '60vh',
-          flexDirection: 'column',
-          gap: '1rem'
-        }}>
-          <p style={{ color: '#ef4444', fontSize: '1.2rem' }}>⚠️ {error}</p>
-          <button
-            onClick={() => window.location.reload()}
-            style={{
-              padding: '0.75rem 1.5rem',
-              background: 'var(--primary)',
-              color: 'white',
-              border: 'none',
-              borderRadius: '8px',
-              cursor: 'pointer'
-            }}
-          >
-            Tekrar Dene
-          </button>
-        </main>
-        <Footer />
-      </div>
-    );
-  }
-
-  return (
-    <div className="app">
-      <Navbar cartCount={cartCount} />
-      <main>
-        <Routes>
-          <Route path="/" element={<Home products={products} onAddToCart={handleAddToCart} />} />
-          <Route path="/categories" element={<Categories products={products} onAddToCart={handleAddToCart} />} />
-          <Route path="/product/:id" element={<ProductDetail onAddToCart={handleAddToCart} />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/faq" element={<FAQ />} />
-          <Route path="/cart" element={<Cart cart={cart} setCart={setCart} />} />
-        </Routes>
-      </main>
-      <WhatsAppButton />
-      <Footer />
-    </div>
-  );
+  return <div className="app">
+    {!loading && <ScrollToTop/>}
+    <a href="#main-content" className="skip-link">İçeriğe geç</a>
+    <Navbar cartCount={cart.reduce((sum,item) => sum + item.quantity, 0)}/>
+    <main id="main-content">
+      {loading ? <div className="app-state" role="status"><div className="loading-spinner"/><p>Koleksiyon hazırlanıyor…</p></div> : error ? <div className="app-state" role="alert"><p>Ürünler şu anda yüklenemiyor.</p><button className="btn btn-primary" onClick={() => window.location.reload()}>Tekrar dene</button></div> :
+      <Routes>
+        <Route path="/" element={<Home products={products} onAddToCart={handleAddToCart} motionEnabled={motionEnabled} onMotionToggle={toggleMotion}/>}/>
+        <Route path="/categories" element={<Categories products={products} onAddToCart={handleAddToCart}/>}/>
+        <Route path="/product/:id" element={<ProductDetail onAddToCart={handleAddToCart}/>}/>
+        <Route path="/about" element={<About/>}/>
+        <Route path="/faq" element={<FAQ/>}/>
+        <Route path="/cart" element={<Cart cart={cart} setCart={setCart}/>}/>
+        <Route path="*" element={<div className="app-state"><h1>Bu sayfa bulunamadı.</h1><Link to="/" className="btn btn-primary">Ana sayfaya dön</Link></div>}/>
+      </Routes>}
+    </main>
+    {toast && <div key={toast.time} className="toast" role="status"><Icon name="check" size={18}/><span>Ürün sepetinize eklendi.</span><Link to="/cart">Sepeti gör</Link></div>}
+    <WhatsAppButton/>
+    <Footer motionEnabled={motionEnabled} onMotionToggle={toggleMotion}/>
+  </div>;
 }
-
-function App() {
-  return (
-    <Router>
-      <ScrollToTop />
-      <ProductProvider>
-        <AppContent />
-      </ProductProvider>
-    </Router>
-  );
-}
-
-export default App;
+export default function App() { return <Router><ProductProvider><AppContent/></ProductProvider></Router>; }

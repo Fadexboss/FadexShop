@@ -1,80 +1,43 @@
-import { useState, useEffect } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
+import { Link, NavLink } from 'react-router-dom';
+import Icon from './Icon';
 import './Navbar.css';
-
-function Navbar({ cartCount }) {
-    const location = useLocation();
+export default function Navbar({ cartCount }) {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
-
-    const isActive = (path) => location.pathname === path;
-
-    // Reset menu state on route change
+    const menuButton = useRef(null);
+    const navigation = useRef(null);
     useEffect(() => {
-        setIsMenuOpen(false);
-    }, [location]);
-
-    // Prevent scrolling when menu is open
-    useEffect(() => {
-        if (isMenuOpen) {
-            document.body.style.overflow = 'hidden';
-        } else {
-            document.body.style.overflow = '';
-        }
+        if (!isMenuOpen) return;
+        const previous = document.body.style.overflow;
+        document.body.style.overflow = 'hidden';
+        const frame = requestAnimationFrame(() => navigation.current?.querySelector('.nav-links a')?.focus());
+        const closeMenu = () => { setIsMenuOpen(false); menuButton.current?.focus(); };
+        const onKey = (event) => {
+            if (event.key === 'Escape') closeMenu();
+            if (event.key === 'Tab') {
+                const elements = [...navigation.current.querySelectorAll('a, button')].filter(element => element.getClientRects().length);
+                const first = elements[0]; const last = elements.at(-1);
+                if (event.shiftKey && document.activeElement === first) { event.preventDefault(); last?.focus(); }
+                else if (!event.shiftKey && document.activeElement === last) { event.preventDefault(); first?.focus(); }
+            }
+        };
+        const onResize = () => { if (window.innerWidth > 768) closeMenu(); };
+        document.addEventListener('keydown', onKey);
+        window.addEventListener('resize', onResize);
+        return () => { cancelAnimationFrame(frame); document.body.style.overflow = previous; document.removeEventListener('keydown', onKey); window.removeEventListener('resize', onResize); };
     }, [isMenuOpen]);
-
-    return (
-        <nav className="navbar">
-            <div className="container navbar-content">
-                <Link to="/" className="logo">
-                    <img src="/Company_images/logo.png" alt="FadexShop Logo" className="logo-icon" />
-                    <span className="logo-text">FadexShop</span>
-                </Link>
-
-                <div className={`nav-overlay ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)} />
-
-                <ul className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
-                    <li>
-                        <Link to="/" className={isActive('/') ? 'active' : ''}>
-                            Ana Sayfa
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/categories" className={isActive('/categories') ? 'active' : ''}>
-                            Ürünler
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/about" className={isActive('/about') ? 'active' : ''}>
-                            Hakkımızda
-                        </Link>
-                    </li>
-                    <li>
-                        <Link to="/faq" className={isActive('/faq') ? 'active' : ''}>
-                            SSS
-                        </Link>
-                    </li>
-                </ul>
-
-                <div className="nav-actions">
-                    <Link to="/cart" className="cart-btn">
-                        <span>🛒</span>
-                        {cartCount > 0 && (
-                            <span className="cart-badge">{cartCount}</span>
-                        )}
-                    </Link>
-
-                    <button
-                        className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`}
-                        onClick={() => setIsMenuOpen(!isMenuOpen)}
-                        aria-label="Menü"
-                    >
-                        <span className="hamburger"></span>
-                    </button>
-                </div>
+    const links = [['/', 'Ana Sayfa'], ['/categories', 'Ürünler'], ['/about', 'Hakkımızda'], ['/faq', 'Sıkça Sorulanlar']];
+    return <nav ref={navigation} className="navbar" aria-label="Ana menü">
+        <div className="container navbar-content">
+            <Link to="/" className="logo" aria-label="FadexShop ana sayfa" onClick={() => setIsMenuOpen(false)}><span className="brand-symbol" aria-hidden="true">f.</span><span className="logo-text">fadex<span>shop</span><i/></span></Link>
+            <div className={`nav-overlay ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(false)}/>
+            <ul id="main-navigation" className={`nav-links ${isMenuOpen ? 'active' : ''}`}>
+                {links.map(([path,label]) => <li key={path}><NavLink to={path} end={path === '/'} onClick={() => setIsMenuOpen(false)}>{label}</NavLink></li>)}
+            </ul>
+            <div className="nav-actions">
+                <Link to="/cart" className="cart-btn" aria-label={`Sepetim, ${cartCount} ürün`} onClick={() => setIsMenuOpen(false)}><Icon name="bag" size={21}/><span className="cart-label">Sepetim</span>{cartCount > 0 && <span className="cart-badge">{cartCount}</span>}</Link>
+                <button ref={menuButton} className={`mobile-menu-btn ${isMenuOpen ? 'active' : ''}`} onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label={isMenuOpen ? 'Menüyü kapat' : 'Menüyü aç'} aria-expanded={isMenuOpen} aria-controls="main-navigation"><span className="hamburger"/></button>
             </div>
-        </nav>
-    );
+        </div>
+    </nav>;
 }
-
-export default Navbar;
-
