@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/((?!assets/|images/|fonts/|data/|favicon.svg|Company_images/|Products_images/|Backgrounds/|Home_page_background_images/).*)", "destination": "/index.html" }
+  ]
+}

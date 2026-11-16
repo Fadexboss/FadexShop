@@ -1,10 +1,10 @@
 import Hero from '../components/Hero';
 import ProductGrid from '../components/ProductGrid';
 
-function Home({ products, onAddToCart }) {
+function Home({ products, onAddToCart, motionEnabled, onMotionToggle }) {
     return (
         <>
-            <Hero />
+            <Hero motionEnabled={motionEnabled} onMotionToggle={onMotionToggle}/>
             <ProductGrid products={products} onAddToCart={onAddToCart} />
         </>
     );
